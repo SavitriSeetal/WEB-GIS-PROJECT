@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.353">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Savitri Seetal.MantriPragada">
+
+<title>Final draft</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="03_final_draft_files/libs/clipboard/clipboard.min.js"></script>
+<script src="03_final_draft_files/libs/quarto-html/quarto.js"></script>
+<script src="03_final_draft_files/libs/quarto-html/popper.min.js"></script>
+<script src="03_final_draft_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="03_final_draft_files/libs/quarto-html/anchor.min.js"></script>
+<link href="03_final_draft_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="03_final_draft_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="03_final_draft_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="03_final_draft_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="03_final_draft_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="03_final_draft_files/libs/htmlwidgets-1.6.2/htmlwidgets.js"></script>
+<script src="03_final_draft_files/libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<link href="03_final_draft_files/libs/leaflet-1.3.1/leaflet.css" rel="stylesheet">
+<script src="03_final_draft_files/libs/leaflet-1.3.1/leaflet.js"></script>
+<link href="03_final_draft_files/libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet">
+<script src="03_final_draft_files/libs/proj4-2.6.2/proj4.min.js"></script>
+<script src="03_final_draft_files/libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+<link href="03_final_draft_files/libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet">
+<script src="03_final_draft_files/libs/leaflet-binding-2.2.0/leaflet.js"></script>
+<link href="03_final_draft_files/libs/leaflet-markercluster-1.0.5/MarkerCluster.css" rel="stylesheet">
+<link href="03_final_draft_files/libs/leaflet-markercluster-1.0.5/MarkerCluster.Default.css" rel="stylesheet">
+<script src="03_final_draft_files/libs/leaflet-markercluster-1.0.5/leaflet.markercluster.js"></script>
+<script src="03_final_draft_files/libs/leaflet-markercluster-1.0.5/leaflet.markercluster.freezable.js"></script>
+<script src="03_final_draft_files/libs/leaflet-markercluster-1.0.5/leaflet.markercluster.layersupport.js"></script>
+
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Final draft</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Savitri Seetal.MantriPragada </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'ggplot2' was built under R version 4.3.3</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(justviz)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">source</span>(here<span class="sc">::</span><span class="fu">here</span>(<span class="st">"utils/plotting_utils.R"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<section id="this-dataset-provides-a-comprehensive-overview-of-artworks-across-maryland-encapsulating-key-features-such-as-unique-identifiers-titles-creation-dates-artist-details-mediums-locations-and-accessibility.-each-artwork-is-categorized-by-medium-and-classified-based-on-its-visibility-and-public-access.-gis-analyses-and-regional-distribution-studies-are-facilitated-by-geographical-information-which-includes-the-county-and-coordinates." class="level1">
+<h1>This dataset provides a comprehensive overview of artworks across Maryland, encapsulating key features such as unique identifiers, titles, creation dates, artist details, mediums, locations, and accessibility. Each artwork is categorized by medium and classified based on its visibility and public access. GIS analyses and regional distribution studies are facilitated by geographical information, which includes the county and coordinates.</h1>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(<span class="at">package =</span> <span class="st">"justviz"</span>)</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(<span class="st">"art_sf"</span>, <span class="at">package =</span> <span class="st">"justviz"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'dplyr' was built under R version 4.3.2</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>
+Attaching package: 'dplyr'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following objects are masked from 'package:stats':
+
+    filter, lag</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>The following objects are masked from 'package:base':
+
+    intersect, setdiff, setequal, union</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(leaflet)</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(sf)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: package 'sf' was built under R version 4.3.3</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Linking to GEOS 3.11.2, GDAL 3.8.2, PROJ 9.3.1; sf_use_s2() is TRUE</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(art_sf)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Simple feature collection with 6 features and 11 fields
+Geometry type: POINT
+Dimension:     XY
+Bounding box:  xmin: -76.68362 ymin: 39.26211 xmax: -76.5919 ymax: 39.34557
+Geodetic CRS:  NAD83
+# A tibble: 6 × 12
+     id county    artist_last_name artist_first_name title date  medium location
+  &lt;int&gt; &lt;chr&gt;     &lt;chr&gt;            &lt;chr&gt;             &lt;chr&gt; &lt;chr&gt; &lt;chr&gt;  &lt;chr&gt;   
+1     1 Baltimor… Streett          Tylden            Sails 1978  copper Patters…
+2     2 Baltimor… Russum           Olin              Unkn… 1969  ceram… Callawa…
+3     3 Baltimor… Benson           J. Arthur         Unkn… 1973  concr… Westpor…
+4     5 Baltimor… McCullough       Donna             &lt;NA&gt;  1989  mural  141 S. …
+5     6 Baltimor… Alexander        Patricia          Unkn… &lt;NA&gt;  ceram… Lexingt…
+6     7 Baltimor… Farber           Saul              Unkn… 1980  stain… Broadwa…
+# ℹ 4 more variables: site &lt;chr&gt;, visibility &lt;chr&gt;, access &lt;chr&gt;,
+#   geometry &lt;POINT [°]&gt;</code></pre>
+</div>
+</div>
+<p>#To identify and display the unique mediums used for the artworks in the art_sf dataset. This step is useful for understanding the diversity of artistic mediums present in the dataset.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>unique_mediums <span class="ot">&lt;-</span> <span class="fu">unique</span>(art_sf<span class="sc">$</span>medium)</span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(unique_mediums)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>  [1] "copper"                               
+  [2] "ceramic tree"                         
+  [3] "concrete and corten steel"            
+  [4] "mural"                                
+  [5] "ceramic tiles"                        
+  [6] "stained glass"                        
+  [7] "painted steel"                        
+  [8] "painted aluminum"                     
+  [9] "marble"                               
+ [10] NA                                     
+ [11] "bronze"                               
+ [12] "brick"                                
+ [13] "cement"                               
+ [14] "copper and stainless steel"           
+ [15] "oil/canvas"                           
+ [16] "sculpture"                            
+ [17] "stainless steel"                      
+ [18] "free-standing sculpture"              
+ [19] "fiber"                                
+ [20] "steel"                                
+ [21] "painted corten plate steel"           
+ [22] "aluminum"                             
+ [23] "bas relief"                           
+ [24] "acrylic, wood"                        
+ [25] "concrete"                             
+ [26] "chrome"                               
+ [27] "acrylic"                              
+ [28] "brick wall hanging"                   
+ [29] "mosaic tiles"                         
+ [30] "limestone and cedar"                  
+ [31] "limestone"                            
+ [32] "mosaic tile/concrete sculpture"       
+ [33] "mixed media"                          
+ [34] "forged steel"                         
+ [35] "painted steel tubing"                 
+ [36] "ceramic tile"                         
+ [37] "bronze bust, stainless steel pedestal"
+ [38] "stone aggregate"                      
+ [39] "painting"                             
+ [40] "acrylic paint"                        
+ [41] "brick sculptured wall"                
+ [42] "sculptural garden"                    
+ [43] "mosaic tile"                          
+ [44] "tactile relief mural"                 
+ [45] "acrylic on canvas"                    
+ [46] "clay"                                 
+ [47] "brick and concrete"                   
+ [48] "brass"                                
+ [49] "metal sculpture"                      
+ [50] "mural (non-city funded)"              
+ [51] "print, wood"                          
+ [52] "corten"                               
+ [53] "cor ten"                              
+ [54] "stone"                                
+ [55] "corten steel"                         
+ [56] "acrylic window"                       
+ [57] "cor-ten &amp; stainless steel"            
+ [58] "acrylic windows"                      
+ [59] "cast aluminum"                        
+ [60] "limestone/stainless steel"            
+ [61] "fabric wall hanging"                  
+ [62] "bronze and unpolished granite"        
+ [63] "polyester resin"                      
+ [64] "gunite"                               
+ [65] "oil on canvas, framed"                
+ [66] "granite"                              
+ [67] "memorial"                             
+ [68] "steel and aluminum"                   
+ [69] "corten &amp; steel"                       
+ [70] "wall hangings"                        
+ [71] "glass-reinforced polyester resin"     
+ [72] "bronze and granite"                   
+ [73] "concrete/ stone"                      
+ [74] "fiberglass, stainless ste"            
+ [75] "painted metal"                        
+ [76] "metalic sculpture"                    
+ [77] "slate &amp; cor ten"                      
+ [78] "concrete and glass"                   
+ [79] "aggregate stone"                      
+ [80] "neon"                                 
+ [81] "mosaic"                               
+ [82] "stone (or terracotta)"                
+ [83] "burnished aluminum"                   
+ [84] "photographic emulsion"                
+ [85] "polished steel"                       
+ [86] "metal (bronze?)"                      
+ [87] "bronze1992/orig.cast iron"            
+ [88] "granite &amp; steel"                      
+ [89] "exposed aggregate"                    
+ [90] "photographic mural"                   
+ [91] "black tennensee marble"               
+ [92] "steel, forged iron, wood"             
+ [93] "mayari r steel"                       
+ [94] "concrete with ceramic til"            
+ [95] "iron"                                 
+ [96] "ceramics"                             
+ [97] "epoxy resin"                          
+ [98] "plaques"                              
+ [99] "ceramic bas relief"                   
+[100] "weathering steel"                     
+[101] "sculptural panel and mura"            
+[102] "granite and aluminum?"                
+[103] "cast granite"                         
+[104] "metal"                                
+[105] "bronze &amp; marble"                      
+[106] "urns"                                 
+[107] "porcelain enameling iron"             
+[108] "aluminum wall relief"                 
+[109] "tiles"                                
+[110] "bridge repainting"                    
+[111] "metal wall sculpture"                 
+[112] "oil on canvas"                        
+[113] "formica frames"                       
+[114] "cast stone"                           
+[115] "stainglass"                           
+[116] "concrete, aluminum, steel"            
+[117] "sheet bronze doors"                   
+[118] "sandstone"                            
+[119] "stainless steel / aluminum?"          
+[120] "bronze and welded copper "            
+[121] "oil/masonite"                         
+[122] "aluminum relief"                      
+[123] "concrete, steel, aluminum"            
+[124] "welded metal wall sculptu"            
+[125] "steel and corten"                     
+[126] "welded metal sculpture"               
+[127] "fiberglass &amp; clock"                   
+[128] "portrait"                             
+[129] "terra cotta"                          
+[130] "stainless steel and alumi"            
+[131] "sculpture, painted steel"             
+[132] "wood"                                 
+[133] "aluminum and bronze"                  
+[134] "fiberglass"                           
+[135] "stainless steel and bronz"            
+[136] "cast iron"                            
+[137] "quarry tile floor"                    
+[138] "aluminum plate"                       
+[139] "galvanized playground str"            
+[140] "sculpture - neon, aluminum &amp; resin"   
+[141] "concrete and rubber"                  
+[142] "steel, aluminum, cable,castconcrete"  
+[143] "stained glass mobile"                 
+[144] "bronze coated steel"                  
+[145] "photographic display case"            
+[146] "concrete aggregate"                   
+[147] "photographic relief piece"            
+[148] "aluminum, corten, stainle"            
+[149] "corten steel and aluminum"            
+[150] "etched glass"                         
+[151] "collage"                              
+[152] "aluminum, plexiglas, mirr"            
+[153] "restoration of paintings "            
+[154] "steel &amp; steel cable"                  
+[155] "terra-cotta"                          
+[156] "sculptured display cases"             
+[157] "tennenese limestine"                  
+[158] "wood relief"                          
+[159] "bus shelters"                         
+[160] "painted mural"                        </code></pre>
+</div>
+</div>
+</section>
+<section id="this-categorizes-the-mediums-of-public-artworks-in-the-art_sf-dataset-into-predefined-categories-such-as-metal-composite-or-mixed-media-stone-and-more.-firstly-to-create-a-dictionary-medium_categories-that-lists-different-mediums-associated-with-each-category.-then-a-custom-function-categorize_medium-is-defined-which-takes-a-medium-as-input-and-returns-the-corresponding-category-by-checking-which-category-list-the-medium-belongs-to." class="level1">
+<h1>This categorizes the mediums of public artworks in the art_sf dataset into predefined categories such as “Metal,” “Composite or Mixed Media,” “Stone,” and more. Firstly to create a dictionary medium_categories that lists different mediums associated with each category. Then, a custom function categorize_medium() is defined, which takes a medium as input and returns the corresponding category by checking which category list the medium belongs to.</h1>
+</section>
+<section id="the-function-is-applied-to-the-medium-column-of-art_sf-using-sapply-inside-a-mutate-call-from-dplyr-creating-a-new-column-medium_category-that-holds-the-categorized-medium-for-each-artwork." class="level1">
+<h1>The function is applied to the medium column of art_sf using sapply() inside a mutate() call from dplyr, creating a new column medium_category that holds the categorized medium for each artwork.</h1>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a dictionary to categorize the mediums</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>medium_categories <span class="ot">&lt;-</span> <span class="fu">list</span>(</span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Metal"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"aluminum"</span>, <span class="st">"brass"</span>, <span class="st">"bronze"</span>, <span class="st">"chrome"</span>, <span class="st">"corten"</span>, <span class="st">"steel"</span>, <span class="st">"stainless steel"</span>, <span class="st">"iron"</span>, <span class="st">"metal"</span>, <span class="st">"weathering steel"</span>, <span class="st">"galvanized playground str"</span>, <span class="st">"bronze coated steel"</span>, <span class="st">"aluminum plate"</span>, <span class="st">"bronze and welded copper"</span>, <span class="st">"aluminum relief"</span>, <span class="st">"aluminum and bronze"</span>, <span class="st">"welded metal sculpture"</span>, <span class="st">"welded metal wall sculptu"</span>, <span class="st">"stainless steel and alumi"</span>, <span class="st">"stainless steel and bronz"</span>, <span class="st">"bridge repainting"</span>, <span class="st">"aluminum wall relief"</span>, <span class="st">"steel and aluminum"</span>, <span class="st">"corten &amp; steel"</span>, <span class="st">"polished steel"</span>, <span class="st">"steel, forged iron, wood"</span>, <span class="st">"mayari r steel"</span>, <span class="st">"burnished aluminum"</span>, <span class="st">"granite &amp; steel"</span>, <span class="st">"iron"</span>, <span class="st">"bronze &amp; marble"</span>, <span class="st">"sheet bronze doors"</span>, <span class="st">"stainless steel / aluminum?"</span>, <span class="st">"bronze and welded copper"</span>, <span class="st">"sculpture, painted steel"</span>, <span class="st">"cast iron"</span>, <span class="st">"aluminum plate"</span>, <span class="st">"bronze1992/orig.cast iron"</span>, <span class="st">"steel, aluminum, cable,castconcrete"</span>, <span class="st">"aluminum, corten, stainle"</span>, <span class="st">"corten steel and aluminum"</span>, <span class="st">"bronze coated steel"</span>, <span class="st">"steel &amp; steel cable"</span>),</span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Composite or Mixed Media"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"fiber"</span>, <span class="st">"mixed media"</span>, <span class="st">"acrylic"</span>, <span class="st">"acrylic paint"</span>, <span class="st">"acrylic windows"</span>, <span class="st">"acrylic window"</span>, <span class="st">"acrylic on canvas"</span>, <span class="st">"acrylic, wood"</span>, <span class="st">"oil/canvas"</span>, <span class="st">"sculpture"</span>, <span class="st">"cor ten"</span>, <span class="st">"painted metal"</span>, <span class="st">"painted mural"</span>, <span class="st">"oil on canvas, framed"</span>, <span class="st">"oil on canvas"</span>, <span class="st">"oil/masonite"</span>, <span class="st">"collage"</span>, <span class="st">"restoration of paintings "</span>, <span class="st">"wall hangings"</span>, <span class="st">"fiberglass, stainless ste"</span>, <span class="st">"sculptural panel and mura"</span>, <span class="st">"fiberglass"</span>, <span class="st">"aluminum, plexiglas, mirr"</span>),</span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Stone"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"stone"</span>, <span class="st">"marble"</span>, <span class="st">"limestone"</span>, <span class="st">"sandstone"</span>, <span class="st">"granite"</span>, <span class="st">"cast granite"</span>, <span class="st">"black tennensee marble"</span>, <span class="st">"concrete aggregate"</span>, <span class="st">"concrete and corten steel"</span>, <span class="st">"concrete and glass"</span>, <span class="st">"concrete/ stone"</span>, <span class="st">"stone aggregate"</span>, <span class="st">"concrete"</span>, <span class="st">"concrete with ceramic til"</span>, <span class="st">"concrete and rubber"</span>, <span class="st">"tennenese limestine"</span>, <span class="st">"concrete, steel, aluminum"</span>, <span class="st">"cast stone"</span>, <span class="st">"quarry tile floor"</span>),</span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Ceramic"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"ceramic"</span>, <span class="st">"ceramic tiles"</span>, <span class="st">"mosaic tiles"</span>, <span class="st">"ceramic tile"</span>, <span class="st">"ceramics"</span>, <span class="st">"ceramic bas relief"</span>, <span class="st">"porcelain enameling iron"</span>, <span class="st">"terra cotta"</span>, <span class="st">"terra-cotta"</span>, <span class="st">"brick wall hanging"</span>, <span class="st">"brick"</span>, <span class="st">"brick sculptured wall"</span>, <span class="st">"concrete/ stone"</span>),</span>
+<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Sculpture"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"sculpture"</span>, <span class="st">"free-standing sculpture"</span>, <span class="st">"sculptural garden"</span>, <span class="st">"metal sculpture"</span>, <span class="st">"sculpture - neon, aluminum &amp; resin"</span>, <span class="st">"fiberglass &amp; clock"</span>, <span class="st">"metalic sculpture"</span>, <span class="st">"urns"</span>, <span class="st">"sculptured display cases"</span>),</span>
+<span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Glass"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"glass"</span>, <span class="st">"stained glass"</span>, <span class="st">"etched glass"</span>, <span class="st">"stainglass"</span>, <span class="st">"stained glass mobile"</span>, <span class="st">"aluminum wall relief"</span>),</span>
+<span id="cb17-9"><a href="#cb17-9" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Other Materials"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"fabric wall hanging"</span>, <span class="st">"epoxy resin"</span>, <span class="st">"polyester resin"</span>, <span class="st">"glass-reinforced polyester resin"</span>, <span class="st">"neon"</span>, <span class="st">"photographic emulsion"</span>, <span class="st">"photographic mural"</span>, <span class="st">"photographic display case"</span>, <span class="st">"photographic relief piece"</span>, <span class="st">"bus shelters"</span>, <span class="st">"plaques"</span>, <span class="st">"tiles"</span>),</span>
+<span id="cb17-10"><a href="#cb17-10" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Wood"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"wood"</span>, <span class="st">"wood relief"</span>, <span class="st">"formica frames"</span>, <span class="st">"print, wood"</span>, <span class="st">"portrait"</span>)</span>
+<span id="cb17-11"><a href="#cb17-11" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb17-12"><a href="#cb17-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-13"><a href="#cb17-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Categorize a medium</span></span>
+<span id="cb17-14"><a href="#cb17-14" aria-hidden="true" tabindex="-1"></a>categorize_medium <span class="ot">&lt;-</span> <span class="cf">function</span>(medium) {</span>
+<span id="cb17-15"><a href="#cb17-15" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (category <span class="cf">in</span> <span class="fu">names</span>(medium_categories)) {</span>
+<span id="cb17-16"><a href="#cb17-16" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (medium <span class="sc">%in%</span> medium_categories[[category]]) {</span>
+<span id="cb17-17"><a href="#cb17-17" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(category)</span>
+<span id="cb17-18"><a href="#cb17-18" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb17-19"><a href="#cb17-19" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb17-20"><a href="#cb17-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(<span class="st">"Other"</span>)</span>
+<span id="cb17-21"><a href="#cb17-21" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb17-22"><a href="#cb17-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-23"><a href="#cb17-23" aria-hidden="true" tabindex="-1"></a>art_sf <span class="ot">&lt;-</span> art_sf <span class="sc">%&gt;%</span></span>
+<span id="cb17-24"><a href="#cb17-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">medium_category =</span> <span class="fu">sapply</span>(medium, categorize_medium))</span>
+<span id="cb17-25"><a href="#cb17-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb17-26"><a href="#cb17-26" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(art_sf)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Simple feature collection with 6 features and 12 fields
+Geometry type: POINT
+Dimension:     XY
+Bounding box:  xmin: -76.68362 ymin: 39.26211 xmax: -76.5919 ymax: 39.34557
+Geodetic CRS:  NAD83
+# A tibble: 6 × 13
+     id county    artist_last_name artist_first_name title date  medium location
+  &lt;int&gt; &lt;chr&gt;     &lt;chr&gt;            &lt;chr&gt;             &lt;chr&gt; &lt;chr&gt; &lt;chr&gt;  &lt;chr&gt;   
+1     1 Baltimor… Streett          Tylden            Sails 1978  copper Patters…
+2     2 Baltimor… Russum           Olin              Unkn… 1969  ceram… Callawa…
+3     3 Baltimor… Benson           J. Arthur         Unkn… 1973  concr… Westpor…
+4     5 Baltimor… McCullough       Donna             &lt;NA&gt;  1989  mural  141 S. …
+5     6 Baltimor… Alexander        Patricia          Unkn… &lt;NA&gt;  ceram… Lexingt…
+6     7 Baltimor… Farber           Saul              Unkn… 1980  stain… Broadwa…
+# ℹ 5 more variables: site &lt;chr&gt;, visibility &lt;chr&gt;, access &lt;chr&gt;,
+#   geometry &lt;POINT [°]&gt;, medium_category &lt;chr&gt;</code></pre>
+</div>
+</div>
+</section>
+<section id="visualization-1-to-visualize-the-number-of-public-artworks-created-each-year-from-1950-onwards.-the-chart-highlights-significant-artistic-movements-during-the-specified-time-periods-using-shaded-regions-and-annotations" class="level1">
+<h1>Visualization 1: To visualize the number of public artworks created each year from 1950 onwards. The chart highlights significant artistic movements during the specified time periods using shaded regions and annotations</h1>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load necessary packages</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Converting the date column to numeric</span></span>
+<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a>art_sf <span class="ot">&lt;-</span> art_sf <span class="sc">%&gt;%</span></span>
+<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">year =</span> <span class="fu">as.numeric</span>(date))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: There was 1 warning in `stopifnot()`.
+ℹ In argument: `year = as.numeric(date)`.
+Caused by warning:
+! NAs introduced by coercion</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Count the number of artworks by year</span></span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>year_counts <span class="ot">&lt;-</span> art_sf <span class="sc">%&gt;%</span></span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(year, <span class="at">sort =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Filter the year values from 1950 to the most recent year</span></span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a>year_counts_filtered <span class="ot">&lt;-</span> year_counts <span class="sc">%&gt;%</span> <span class="fu">filter</span>(year <span class="sc">&gt;=</span> <span class="dv">1950</span>)</span>
+<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-7"><a href="#cb21-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot with customized x and y axes</span></span>
+<span id="cb21-8"><a href="#cb21-8" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(year_counts_filtered, <span class="fu">aes</span>(<span class="at">x =</span> year, <span class="at">y =</span> n)) <span class="sc">+</span></span>
+<span id="cb21-9"><a href="#cb21-9" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Add first shaded region behind the line and points</span></span>
+<span id="cb21-10"><a href="#cb21-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_rect</span>(<span class="fu">aes</span>(<span class="at">xmin =</span> <span class="dv">1965</span>, <span class="at">xmax =</span> <span class="dv">1970</span>, <span class="at">ymin =</span> <span class="sc">-</span><span class="cn">Inf</span>, <span class="at">ymax =</span> <span class="cn">Inf</span>), <span class="at">fill =</span> <span class="st">"darkgrey"</span>, <span class="at">alpha =</span> <span class="fl">0.02</span>) <span class="sc">+</span></span>
+<span id="cb21-11"><a href="#cb21-11" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Add second shaded region behind the line and points</span></span>
+<span id="cb21-12"><a href="#cb21-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_rect</span>(<span class="fu">aes</span>(<span class="at">xmin =</span> <span class="dv">1974</span>, <span class="at">xmax =</span> <span class="dv">1980</span>, <span class="at">ymin =</span> <span class="sc">-</span><span class="cn">Inf</span>, <span class="at">ymax =</span> <span class="cn">Inf</span>), <span class="at">fill =</span> <span class="st">"darkgrey"</span>, <span class="at">alpha =</span> <span class="fl">0.02</span>) <span class="sc">+</span></span>
+<span id="cb21-13"><a href="#cb21-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>() <span class="sc">+</span></span>
+<span id="cb21-14"><a href="#cb21-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb21-15"><a href="#cb21-15" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Add title for the first shaded region</span></span>
+<span id="cb21-16"><a href="#cb21-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">annotate</span>(<span class="st">"text"</span>, <span class="at">x =</span> <span class="fl">1967.5</span>, <span class="at">y =</span> <span class="fu">max</span>(year_counts_filtered<span class="sc">$</span>n) <span class="sc">-</span> <span class="dv">5</span>, <span class="at">label =</span> <span class="st">"Pop and</span><span class="sc">\n</span><span class="st">Conceptual Art"</span>, <span class="at">hjust =</span> <span class="fl">0.5</span>, <span class="at">size =</span> <span class="fl">3.5</span>) <span class="sc">+</span></span>
+<span id="cb21-17"><a href="#cb21-17" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Add title for the second shaded region</span></span>
+<span id="cb21-18"><a href="#cb21-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">annotate</span>(<span class="st">"text"</span>, <span class="at">x =</span> <span class="dv">1977</span>, <span class="at">y =</span> <span class="fu">max</span>(year_counts_filtered<span class="sc">$</span>n) <span class="sc">-</span> <span class="dv">5</span>, <span class="at">label =</span> <span class="st">"Minimalism and</span><span class="sc">\n</span><span class="st">Street Art"</span>, <span class="at">hjust =</span> <span class="fl">0.5</span>, <span class="at">size =</span> <span class="fl">3.5</span>) <span class="sc">+</span></span>
+<span id="cb21-19"><a href="#cb21-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Number of Artworks by Year"</span>,</span>
+<span id="cb21-20"><a href="#cb21-20" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"Year"</span>,</span>
+<span id="cb21-21"><a href="#cb21-21" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Number of Artworks"</span>) <span class="sc">+</span></span>
+<span id="cb21-22"><a href="#cb21-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">1950</span>, <span class="fu">max</span>(year_counts_filtered<span class="sc">$</span>year), <span class="at">by =</span> <span class="dv">10</span>)) <span class="sc">+</span></span>
+<span id="cb21-23"><a href="#cb21-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ylim</span>(<span class="dv">0</span>, <span class="dv">50</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="03_final_draft_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid" width="1400"></p>
+</div>
+</div>
+</section>
+<section id="visualization-2-this-bar-chart-visualizes-the-distribution-of-art-mediums-from-1970-to-1980-including-percentage-labels-for-each-medium.-the-chart-shows-that-between-1970-and-1980-mural-was-the-most-commonly-used-medium-for-public-art-created-with-more-than-20-examples-far-exceeding-any-other-medium.-other-common-mediums-include-painted-steel-corten-steel-and-painted-aluminum-though-these-appear-much-less-frequently.-a-variety-of-materials-e.g.-aggregate-stone-breach-reliefs-and-copper-are-highlighted-on-the-chart-showing-a-wide-range-of-artistic-styles." class="level1">
+<h1>Visualization 2: This bar-chart visualizes the distribution of art mediums from 1970 to 1980, including percentage labels for each medium. The chart shows that between 1970 and 1980, “mural” was the most commonly used medium for public art created, with more than 20 examples, far exceeding any other medium. Other common mediums include “painted steel,” “corten steel,” and “painted aluminum,” though these appear much less frequently. A variety of materials, e.g.&nbsp;“aggregate stone”, “breach reliefs,” and “copper” are highlighted on the chart showing a wide range of artistic styles.</h1>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Filter rows belonging to the "Other" category</span></span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>other_mediums <span class="ot">&lt;-</span> art_sf <span class="sc">%&gt;%</span></span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(medium_category <span class="sc">==</span> <span class="st">"Other"</span>)</span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Count the unique mediums in the "Other" category</span></span>
+<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a>other_medium_counts <span class="ot">&lt;-</span> other_mediums <span class="sc">%&gt;%</span></span>
+<span id="cb22-7"><a href="#cb22-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(medium, <span class="at">sort =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb22-8"><a href="#cb22-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-9"><a href="#cb22-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Filter the data from 1970 to 1980</span></span>
+<span id="cb22-10"><a href="#cb22-10" aria-hidden="true" tabindex="-1"></a>artworks_70_80 <span class="ot">&lt;-</span> other_mediums <span class="sc">%&gt;%</span></span>
+<span id="cb22-11"><a href="#cb22-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(date <span class="sc">&gt;=</span> <span class="dv">1970</span> <span class="sc">&amp;</span> date <span class="sc">&lt;=</span> <span class="dv">1980</span>)</span>
+<span id="cb22-12"><a href="#cb22-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-13"><a href="#cb22-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Count the frequency of each medium</span></span>
+<span id="cb22-14"><a href="#cb22-14" aria-hidden="true" tabindex="-1"></a>medium_counts <span class="ot">&lt;-</span> artworks_70_80 <span class="sc">%&gt;%</span></span>
+<span id="cb22-15"><a href="#cb22-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">count</span>(medium, <span class="at">sort =</span> <span class="cn">TRUE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Remove rows with NA values</span></span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>medium_counts <span class="ot">&lt;-</span> medium_counts <span class="sc">%&gt;%</span> <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(medium))</span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a>set3 <span class="ot">&lt;-</span> RColorBrewer<span class="sc">::</span><span class="fu">brewer.pal</span>(<span class="dv">12</span>, <span class="st">"Set3"</span>)</span>
+<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a>pal <span class="ot">&lt;-</span> <span class="fu">c</span>(set3, <span class="st">"gray"</span>)</span>
+<span id="cb23-6"><a href="#cb23-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-7"><a href="#cb23-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Create the bar plot without NA values</span></span>
+<span id="cb23-8"><a href="#cb23-8" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(medium_counts, <span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">reorder</span>(medium, <span class="sc">-</span>n), <span class="at">y =</span> n, <span class="at">fill =</span> medium)) <span class="sc">+</span></span>
+<span id="cb23-9"><a href="#cb23-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_bar</span>(<span class="at">stat =</span> <span class="st">"identity"</span>) <span class="sc">+</span></span>
+<span id="cb23-10"><a href="#cb23-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">coord_flip</span>() <span class="sc">+</span>  <span class="co"># Flip coordinates for a horizontal bar chart</span></span>
+<span id="cb23-11"><a href="#cb23-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Most Used Art Mediums (1970-1980)"</span>,</span>
+<span id="cb23-12"><a href="#cb23-12" aria-hidden="true" tabindex="-1"></a>       <span class="at">x =</span> <span class="st">"Medium"</span>, <span class="at">y =</span> <span class="st">"Counts"</span>) <span class="sc">+</span></span>
+<span id="cb23-13"><a href="#cb23-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_manual</span>(<span class="at">values =</span> pal) <span class="sc">+</span></span>
+<span id="cb23-14"><a href="#cb23-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
+<span id="cb23-15"><a href="#cb23-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"bottom"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="03_final_draft_files/figure-html/unnamed-chunk-8-1.png" class="img-fluid" width="1400"></p>
+</div>
+</div>
+</section>
+<section id="understanding-the-different-categories-or-levels-of-visibility-that-are-present-in-the-dataset-which-can-be-useful-for-further-analysis-or-visualization" class="level1">
+<h1>Understanding the different categories or levels of visibility that are present in the dataset, which can be useful for further analysis or visualization</h1>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>unique_visibility <span class="ot">&lt;-</span> <span class="fu">unique</span>(art_sf<span class="sc">$</span>visibility)</span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(unique_visibility)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> [1] NA                                                                                                     
+ [2] "very visible"                                                                                         
+ [3] "highly visible"                                                                                       
+ [4] "visible"                                                                                              
+ [5] "limited visibility"                                                                                   
+ [6] "visible from street"                                                                                  
+ [7] "moderately visible"                                                                                   
+ [8] "visible to  northward traffic"                                                                        
+ [9] "visible to both directions of traffic"                                                                
+[10] "limited visiblity"                                                                                    
+[11] "limited visibilty"                                                                                    
+[12] "very visible (on harford rd.)"                                                                        
+[13] "visible to southward  traffic and side streets"                                                       
+[14] "very visible from street; in front of penn station, between charles and st. paul sts."                
+[15] "no visibility"                                                                                        
+[16] "very visible from liberty st."                                                                        
+[17] "visible from sidewalk; in between buildings"                                                          
+[18] "very visible (at inner harbor)"                                                                       
+[19] "visible; located on school grounds but, because artwork is over entrance, can be seen from a distance"
+[20] "visible from one side of building"                                                                    
+[21] "visible from eastward traffic"                                                                        
+[22] "visible, must drive into park area several meters"                                                    
+[23] "very visible from street"                                                                             
+[24] "visible (on side wall of walbrook junction shopping center)"                                          
+[25] "visible from south, side street"                                                                      
+[26] "moderate"                                                                                             
+[27] "not very visible in rear corner of café"                                                              
+[28] "very visible, facing side street on greenmount"                                                       
+[29] "visible in corner area"                                                                               
+[30] "sold"                                                                                                 
+[31] "limited visibility; located on school grounds"                                                        
+[32] "visible (on broadway)"                                                                                
+[33] "limited visibilty as inside park area"                                                                
+[34] "visible; near baltimore city public school headquarters"                                              
+[35] "very visible (north and park aves.)"                                                                  
+[36] "visible (on side of restaurant/ bar near cross st. market in federal hill)"                           
+[37] "very visible (on york rd.)"                                                                           
+[38] "barely visible from street"                                                                           
+[39] "limited visibility as located inside school building"                                                 </code></pre>
+</div>
+</div>
+</section>
+<section id="co-ordinates-are-extracted" class="level1">
+<h1>Co-ordinates are extracted</h1>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Convert to data frame and extract coordinates</span></span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>art_sf <span class="ot">&lt;-</span> <span class="fu">st_as_sf</span>(art_sf)</span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>art_sf <span class="ot">&lt;-</span> art_sf <span class="sc">%&gt;%</span></span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">longitude =</span> <span class="fu">st_coordinates</span>(.)[,<span class="dv">1</span>],</span>
+<span id="cb26-6"><a href="#cb26-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">latitude =</span> <span class="fu">st_coordinates</span>(.)[,<span class="dv">2</span>]</span>
+<span id="cb26-7"><a href="#cb26-7" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb26-8"><a href="#cb26-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-9"><a href="#cb26-9" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(art_sf)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Simple feature collection with 6 features and 15 fields
+Geometry type: POINT
+Dimension:     XY
+Bounding box:  xmin: -76.68362 ymin: 39.26211 xmax: -76.5919 ymax: 39.34557
+Geodetic CRS:  NAD83
+# A tibble: 6 × 16
+     id county    artist_last_name artist_first_name title date  medium location
+  &lt;int&gt; &lt;chr&gt;     &lt;chr&gt;            &lt;chr&gt;             &lt;chr&gt; &lt;chr&gt; &lt;chr&gt;  &lt;chr&gt;   
+1     1 Baltimor… Streett          Tylden            Sails 1978  copper Patters…
+2     2 Baltimor… Russum           Olin              Unkn… 1969  ceram… Callawa…
+3     3 Baltimor… Benson           J. Arthur         Unkn… 1973  concr… Westpor…
+4     5 Baltimor… McCullough       Donna             &lt;NA&gt;  1989  mural  141 S. …
+5     6 Baltimor… Alexander        Patricia          Unkn… &lt;NA&gt;  ceram… Lexingt…
+6     7 Baltimor… Farber           Saul              Unkn… 1980  stain… Broadwa…
+# ℹ 8 more variables: site &lt;chr&gt;, visibility &lt;chr&gt;, access &lt;chr&gt;,
+#   geometry &lt;POINT [°]&gt;, medium_category &lt;chr&gt;, year &lt;dbl&gt;, longitude &lt;dbl&gt;,
+#   latitude &lt;dbl&gt;</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Remove rows where visibility is NA</span></span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>art_sf <span class="ot">&lt;-</span> art_sf <span class="sc">%&gt;%</span></span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(visibility))</span>
+<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-5"><a href="#cb28-5" aria-hidden="true" tabindex="-1"></a>visibility_categories <span class="ot">&lt;-</span> <span class="fu">list</span>(</span>
+<span id="cb28-6"><a href="#cb28-6" aria-hidden="true" tabindex="-1"></a>  <span class="st">"visible"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"very visible"</span>, <span class="st">"highly visible"</span>, <span class="st">"very visible (on harford rd.)"</span>, <span class="st">"very from street; in front of penn station, between charles and st.paul sts."</span>, <span class="st">"very visible from liberty st."</span>, <span class="st">"very visible (a inner harbor)"</span>, <span class="st">"very visible from street"</span>, <span class="st">"very visible, facing side street on greenmount"</span>, <span class="st">"very visible (north and park aves.)"</span>, <span class="st">"very visible (on york rd.)"</span>, <span class="st">"visible"</span>, <span class="st">"visible from street"</span>, <span class="st">"visible to northward traffic"</span>, <span class="st">"visible to both directions of traffic"</span>, <span class="st">"visible to southward traffic and side streets"</span>, <span class="st">"very visible from sidewalk; in between buildings"</span>, <span class="st">"visible; located on school grounds but, because artwork is over entrance, can be seen from a distance"</span>, <span class="st">"visible from one side of building"</span>, <span class="st">"visible from eastward traffic"</span>, <span class="st">"visible, must drive into park area several meters"</span>, <span class="st">"visible (on side wall of walbrook junction shopping center)"</span>, <span class="st">"visible from south, side street"</span>, <span class="st">"visible in corner area"</span>, <span class="st">"visible (on broadway)"</span>, <span class="st">"visible; near bsltimore city public school headquarters"</span>, <span class="st">"visible (on side of restaurant/ bar near cross st. market in federal hill)"</span>),</span>
+<span id="cb28-7"><a href="#cb28-7" aria-hidden="true" tabindex="-1"></a>  <span class="st">"limited visibility"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"limited visibility"</span>, <span class="st">"moderately visible"</span>, <span class="st">"limited visiblity"</span>, <span class="st">"limited visibilty"</span>, <span class="st">"moderate"</span>, <span class="st">"limited visibility; located on school grounds"</span>, <span class="st">"limited visibiltiy as inside park area"</span>, <span class="st">"barely visible from street"</span>, <span class="st">"limited visibility as located inside school building"</span> ),</span>
+<span id="cb28-8"><a href="#cb28-8" aria-hidden="true" tabindex="-1"></a>  <span class="st">"not visible"</span> <span class="ot">=</span> <span class="fu">c</span>(<span class="st">"no visibility"</span>, <span class="st">"not very visible in rear corner of cafe"</span>, <span class="st">"sold"</span>)</span>
+<span id="cb28-9"><a href="#cb28-9" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb28-10"><a href="#cb28-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-11"><a href="#cb28-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Function to categorize a visibility</span></span>
+<span id="cb28-12"><a href="#cb28-12" aria-hidden="true" tabindex="-1"></a>categorize_visibility <span class="ot">&lt;-</span> <span class="cf">function</span>(visibility) {</span>
+<span id="cb28-13"><a href="#cb28-13" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (category <span class="cf">in</span> <span class="fu">names</span>(visibility_categories)) {</span>
+<span id="cb28-14"><a href="#cb28-14" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (visibility <span class="sc">%in%</span> visibility_categories[[category]]) {</span>
+<span id="cb28-15"><a href="#cb28-15" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(category)</span>
+<span id="cb28-16"><a href="#cb28-16" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb28-17"><a href="#cb28-17" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb28-18"><a href="#cb28-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(<span class="st">"Other"</span>)</span>
+<span id="cb28-19"><a href="#cb28-19" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb28-20"><a href="#cb28-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-21"><a href="#cb28-21" aria-hidden="true" tabindex="-1"></a><span class="co"># Apply the function</span></span>
+<span id="cb28-22"><a href="#cb28-22" aria-hidden="true" tabindex="-1"></a>art_sf <span class="ot">&lt;-</span> art_sf <span class="sc">%&gt;%</span></span>
+<span id="cb28-23"><a href="#cb28-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">visibility_category =</span> <span class="fu">sapply</span>(visibility, categorize_visibility))</span>
+<span id="cb28-24"><a href="#cb28-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-25"><a href="#cb28-25" aria-hidden="true" tabindex="-1"></a><span class="co"># Show the first few rows of the updated data</span></span>
+<span id="cb28-26"><a href="#cb28-26" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(art_sf)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Simple feature collection with 6 features and 16 fields
+Geometry type: POINT
+Dimension:     XY
+Bounding box:  xmin: -76.6333 ymin: 39.28656 xmax: -76.59641 ymax: 39.30584
+Geodetic CRS:  NAD83
+# A tibble: 6 × 17
+     id county    artist_last_name artist_first_name title date  medium location
+  &lt;int&gt; &lt;chr&gt;     &lt;chr&gt;            &lt;chr&gt;             &lt;chr&gt; &lt;chr&gt; &lt;chr&gt;  &lt;chr&gt;   
+1     9 Baltimor… Mears            Mary Ann          Red … 1978  paint… IBM Bui…
+2    10 Baltimor… Mills, architec… Robert and Henri… Wash… 1815… marble Mount V…
+3    12 Baltimor… Miller and MICA  Tom               &lt;NA&gt;  2000  mural  1740 Dr…
+4    16 Baltimor… Mullen           Gary              &lt;NA&gt;  2000  mural  Brentwo…
+5    17 Baltimor… Veale            Archie            &lt;NA&gt;  1998  mural  900 N. …
+6    19 Baltimor… Hess             David             Balt… 2006  coppe… Alberma…
+# ℹ 9 more variables: site &lt;chr&gt;, visibility &lt;chr&gt;, access &lt;chr&gt;,
+#   geometry &lt;POINT [°]&gt;, medium_category &lt;chr&gt;, year &lt;dbl&gt;, longitude &lt;dbl&gt;,
+#   latitude &lt;dbl&gt;, visibility_category &lt;chr&gt;</code></pre>
+</div>
+</div>
+<p>#The map is created using the leaflet package represents the geographical distribution of public artworks in Maryland, categorized by their visibility. The map visually represents the distribution and visibility of public artworks in Maryland. Each image shall be marked on the map in its respective location with a colour indicating its visibility category. The map is a useful tool for exploring the visibility and geographic spread of public art in the region, thanks to interactive elements such as Popups and Legend Paintings, which provide additional context and information about each work.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(leaflet)</span>
+<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(sf)</span>
+<span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-5"><a href="#cb30-5" aria-hidden="true" tabindex="-1"></a>tile_provider_url <span class="ot">&lt;-</span> <span class="st">"https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}"</span></span>
+<span id="cb30-6"><a href="#cb30-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb30-7"><a href="#cb30-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Create the interactive map with modified basemap and dimensions</span></span>
+<span id="cb30-8"><a href="#cb30-8" aria-hidden="true" tabindex="-1"></a><span class="fu">leaflet</span>(<span class="at">data =</span> art_sf, <span class="at">height=</span><span class="dv">600</span>, <span class="at">width=</span><span class="dv">600</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb30-9"><a href="#cb30-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addTiles</span>(<span class="at">urlTemplate =</span> tile_provider_url) <span class="sc">%&gt;%</span></span>
+<span id="cb30-10"><a href="#cb30-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addCircleMarkers</span>(</span>
+<span id="cb30-11"><a href="#cb30-11" aria-hidden="true" tabindex="-1"></a>    <span class="sc">~</span>longitude, <span class="sc">~</span>latitude,</span>
+<span id="cb30-12"><a href="#cb30-12" aria-hidden="true" tabindex="-1"></a>    <span class="at">color =</span> <span class="sc">~</span><span class="fu">case_when</span>(</span>
+<span id="cb30-13"><a href="#cb30-13" aria-hidden="true" tabindex="-1"></a>      visibility_category <span class="sc">==</span> <span class="st">"visible"</span> <span class="sc">~</span> <span class="st">"red"</span>,</span>
+<span id="cb30-14"><a href="#cb30-14" aria-hidden="true" tabindex="-1"></a>      visibility_category <span class="sc">==</span> <span class="st">"limited visibility"</span> <span class="sc">~</span> <span class="st">"blue"</span>,</span>
+<span id="cb30-15"><a href="#cb30-15" aria-hidden="true" tabindex="-1"></a>      visibility_category <span class="sc">==</span> <span class="st">"not visible"</span> <span class="sc">~</span> <span class="st">"orange"</span></span>
+<span id="cb30-16"><a href="#cb30-16" aria-hidden="true" tabindex="-1"></a>    ),</span>
+<span id="cb30-17"><a href="#cb30-17" aria-hidden="true" tabindex="-1"></a>    <span class="at">popup =</span> <span class="sc">~</span><span class="fu">paste</span>(<span class="st">"Medium: "</span>, medium, <span class="st">"&lt;br&gt;"</span>,</span>
+<span id="cb30-18"><a href="#cb30-18" aria-hidden="true" tabindex="-1"></a>                   <span class="st">"Visibility: "</span>, visibility_category),</span>
+<span id="cb30-19"><a href="#cb30-19" aria-hidden="true" tabindex="-1"></a>    <span class="at">radius =</span> <span class="fl">1.5</span></span>
+<span id="cb30-20"><a href="#cb30-20" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
+<span id="cb30-21"><a href="#cb30-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addLegend</span>(</span>
+<span id="cb30-22"><a href="#cb30-22" aria-hidden="true" tabindex="-1"></a>    <span class="at">position =</span> <span class="st">"topleft"</span>,</span>
+<span id="cb30-23"><a href="#cb30-23" aria-hidden="true" tabindex="-1"></a>    <span class="at">colors =</span> <span class="fu">c</span>(<span class="st">"red"</span>, <span class="st">"blue"</span>, <span class="st">"orange"</span>),</span>
+<span id="cb30-24"><a href="#cb30-24" aria-hidden="true" tabindex="-1"></a>    <span class="at">labels =</span> <span class="fu">c</span>(<span class="st">"Visible"</span>, <span class="st">"Limited Visibility"</span>, <span class="st">"Not Visible"</span>),</span>
+<span id="cb30-25"><a href="#cb30-25" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Visibility"</span></span>
+<span id="cb30-26"><a href="#cb30-26" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
+<span id="cb30-27"><a href="#cb30-27" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addControl</span>(</span>
+<span id="cb30-28"><a href="#cb30-28" aria-hidden="true" tabindex="-1"></a>    <span class="at">html =</span> <span class="st">"&lt;h2&gt;INTERACTIVE MAP OF ARTWORKS BY VISIBILITY CATEGORY.&lt;/h2&gt;"</span>,</span>
+<span id="cb30-29"><a href="#cb30-29" aria-hidden="true" tabindex="-1"></a>    <span class="at">position =</span> <span class="st">"topright"</span>,</span>
+<span id="cb30-30"><a href="#cb30-30" aria-hidden="true" tabindex="-1"></a>    <span class="at">className =</span> <span class="st">"map-title"</span></span>
+<span id="cb30-31"><a href="#cb30-31" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="htmlwidget-c5210f395900747856e2" style="width:100%;height:650px;" class="leaflet html-widget "></div>
+<script type="application/json" data-for="htmlwidget-c5210f395900747856e2">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false}]},{"method":"addCircleMarkers","args":[[39.28656162507934,39.29730928950913,39.30584308938751,39.30292029279229,39.30043783617391,39.29730000000006,39.28846556635039,39.28646269965611,39.29488000000003,39.2912,39.30646362158774,39.28519381287631,39.3059779876919,39.26682150653619,39.28738000812598,39.32947000000013,39.42829000000012,39.31189552664472,39.290372489646,39.29730928950913,39.292289762845,39.32947000000013,39.27836880139239,39.28022140477276,39.29488000000003,39.28664256406194,39.31099620461538,39.2838996318726,39.26694000000003,39.26694000000003,39.28289239119977,39.31189552664472,39.29146211325886,39.30750188439189,39.30711915495539,39.28653837861109,39.26694000000003,39.28659731736442,39.29146211325886,39.29146211325886,39.28365000000008,39.3077757819037,39.30744388259967,39.34837884521075,39.29780080038921,39.29868448603429,39.29765925892087,39.29730000000006,39.3507282518699,39.29146211325886,39.29488000000003,39.29730000000006,39.29488000000003,39.28583317423556,39.3015526379558,39.30328901482432,39.32947000000013,39.28646269965611,39.28489787932511,39.28673917194104,39.29730000000006,39.29146211325886,39.29146211325886,39.29488000000003,39.29730928950913,39.29146211325886,39.29146211325886,39.28291937086067,39.25000418458825,39.29730928950913,39.29730928950913,39.28022140477276,39.30672116781016,39.28763044116419,39.29146211325886,39.29146211325886,39.29730000000006,39.28703448054869,39.32422806536891,39.29488000000003,39.27469956751287,39.26694000000003,39.29146211325886,39.29730928950913,39.31099620461538,39.29461238292728,39.28657061829961,39.33167161806898,39.26694000000003,39.29730000000006,39.31194000000011,39.29730000000006,39.29310232572219,39.31619999999992,39.27833151021881,39.27977174375809,39.28646269965611,39.31619999999992,39.2790342996941,39.26388971672066,39.29488000000003,39.29488000000003,39.26694000000003,39.28920563184545,39.30189570183552,39.29730928950913,39.33384558374571,39.29636873180883,39.29488000000003,39.28780268947975,39.29146211325886,39.31096922495453,39.32831714689974,39.29730000000006,39.29005099455298,39.28925024349324,39.32947000000013,39.31180559444175,39.26694000000003,39.37076277976509,39.28643407772562,39.33472931296865,39.32831714689974,39.29146211325886,39.28619127986101,39.28925024349324,39.29146211325886,39.28365000000008,39.29096830302291,39.28365000000008,39.31619999999992,39.32804145953534,39.28096784205707,39.29488000000003,39.29280455582531,39.30508765888288,39.28365000000008,39.33108705874997,39.31602341475917,39.31194000000011,39.31451255374998,39.29730928950913,39.29730928950913,39.31359634135141,39.30541141481342,39.29730928950913,39.29488000000003,39.28941758078926,39.36557610689288,39.29503246155976,39.29730928950913,39.30241000000007,39.25000418458825,39.28664256406194,39.30424229617535,39.286183909827,39.29146211325886,39.29449364537777,39.32831714689974,39.29730000000006,39.30817233344339,39.31194000000011,39.28885597671823,39.29909817416774,39.32831714689974,39.3124081402014,39.31194000000011,39.27695686580637,39.29146211325886,39.35945167555406,39.28701276375379,39.29499691117859,39.29730000000006,39.32947000000013,39.26694000000003,39.29488000000003,39.29488000000003,39.28175924544286,39.32731889944722,39.28944844879339,39.28641773355463,39.29868448603429,39.29146211325886],[-76.61279148401297,-76.61563717252402,-76.63329602628102,-76.60957191114807,-76.59641450253403,-76.60749999999996,-76.63889382547316,-76.61616394162286,-76.62253999999996,-76.60457999999994,-76.6381793449001,-76.62012958508384,-76.63743290761579,-76.63164127374711,-76.63570620931955,-76.60331999999988,-76.77931999999998,-76.59960742306345,-76.63817146202119,-76.61563717252402,-76.64532280291871,-76.60331999999988,-76.6241858941242,-76.60655918234988,-76.62253999999996,-76.56680914865484,-76.58588376889628,-76.62888035511713,-76.62630000000001,-76.62630000000001,-76.63094879578455,-76.59960742306345,-76.61031346272442,-76.62114988191786,-76.6163791665234,-76.61535868592661,-76.62630000000001,-76.60928176413138,-76.61031346272442,-76.61031346272442,-76.65196999999989,-76.64138216577091,-76.63382662627828,-76.56843165621679,-76.61533898833461,-76.62299878904554,-76.58422002314211,-76.60749999999996,-76.69460280901836,-76.61031346272442,-76.62253999999996,-76.60749999999996,-76.62253999999996,-76.63264851441988,-76.6430238325883,-76.59300639936833,-76.60331999999988,-76.61616394162286,-76.65235266008187,-76.65211940500427,-76.60749999999996,-76.61031346272442,-76.61031346272442,-76.62253999999996,-76.61563717252402,-76.61031346272442,-76.61031346272442,-76.62996853477262,-76.62289087040199,-76.61563717252402,-76.61563717252402,-76.60655918234988,-76.64185570336787,-76.61629234521642,-76.61031346272442,-76.61031346272442,-76.60749999999996,-76.55570960997416,-76.5700688634434,-76.62253999999996,-76.63308018899397,-76.62630000000001,-76.61031346272442,-76.61563717252402,-76.58588376889628,-76.57774620187782,-76.63743290761579,-76.58903139599886,-76.62630000000001,-76.60749999999996,-76.64039000000002,-76.60749999999996,-76.64015259533683,-76.57662999999991,-76.61192395611208,-76.62786412122404,-76.61616394162286,-76.57662999999991,-76.63601197880951,-76.65110260246115,-76.62253999999996,-76.62253999999996,-76.62630000000001,-76.59420249766731,-76.58539753018476,-76.61563717252402,-76.6641132885438,-76.61549394671098,-76.62253999999996,-76.61239578232005,-76.61031346272442,-76.67455692098531,-76.6077462874286,-76.60749999999996,-76.61519267383119,-76.61627047323799,-76.60331999999988,-76.60210753830489,-76.62630000000001,-76.74324870143664,-76.61514965903694,-76.66280278206233,-76.6077462874286,-76.61031346272442,-76.62208503141323,-76.61627047323799,-76.61031346272442,-76.65196999999989,-76.65301815838353,-76.65196999999989,-76.57662999999991,-76.68457044687997,-76.63281938560544,-76.62253999999996,-76.65038238493479,-76.58733167736347,-76.65196999999989,-76.6326575076402,-76.59610006714917,-76.64039000000002,-76.60966184335098,-76.61563717252402,-76.61563717252402,-76.60923370933864,-76.59271861631896,-76.61563717252402,-76.62253999999996,-76.61645033676308,-76.62819068922511,-76.61572227669929,-76.61563717252402,-76.56324999999987,-76.62289087040199,-76.56680914865484,-76.62025585685615,-76.5936179383483,-76.61031346272442,-76.64727149061633,-76.6077462874286,-76.60749999999996,-76.61359188061903,-76.64039000000002,-76.61515422748131,-76.64155180250998,-76.6077462874286,-76.61164035181548,-76.64039000000002,-76.61306128062176,-76.61031346272442,-76.60992264673951,-76.65103901021284,-76.61987063772014,-76.60749999999996,-76.60331999999988,-76.62630000000001,-76.62253999999996,-76.62253999999996,-76.68254290060548,-76.5857578638122,-76.58881555871181,-76.61753990432766,-76.62299878904554,-76.61031346272442],1.5,null,null,{"interactive":true,"className":"","stroke":true,"color":["red","red","red","blue","red","red","red","blue","red","red",null,"red","red","blue","blue","red","red","red","red","red","red",null,"red","red","red","red","blue","red","red","red","red","red","red","red",null,"red","red","red","red","red","orange","red","red","blue","red","red","red","red","red","red","red","red","red","red","blue","blue","red","blue","red","blue","red","red","red","red","red","red","red","red","red","red","red",null,"red","red","red","red","red","red","red",null,"red","red","red","red","blue","red","red","red","red","red","red","red","red","red","red","blue","red","red","red","blue","red","red","blue","red","red","red","blue","blue","red","red","red","red","red","red","blue","blue","red","red","red","blue",null,"red","red","red","blue","red","red","red","blue","red","red","red","red","red","red","red","red","red","red","red","red","red","red","red","red","red","orange","red","blue","red","red","red","red","red","red","red","red",null,"red","blue","red","red","blue","red","red",null,"red","red","red","red","blue","red","red","blue","red","red","red","blue","blue","red","red","red","red"],"weight":5,"opacity":0.5,"fill":true,"fillColor":["red","red","red","blue","red","red","red","blue","red","red",null,"red","red","blue","blue","red","red","red","red","red","red",null,"red","red","red","red","blue","red","red","red","red","red","red","red",null,"red","red","red","red","red","orange","red","red","blue","red","red","red","red","red","red","red","red","red","red","blue","blue","red","blue","red","blue","red","red","red","red","red","red","red","red","red","red","red",null,"red","red","red","red","red","red","red",null,"red","red","red","red","blue","red","red","red","red","red","red","red","red","red","red","blue","red","red","red","blue","red","red","blue","red","red","red","blue","blue","red","red","red","red","red","red","blue","blue","red","red","red","blue",null,"red","red","red","blue","red","red","red","blue","red","red","red","red","red","red","red","red","red","red","red","red","red","red","red","red","red","orange","red","blue","red","red","red","red","red","red","red","red",null,"red","blue","red","red","blue","red","red",null,"red","red","red","red","blue","red","red","blue","red","red","red","blue","blue","red","red","red","red"],"fillOpacity":0.2},null,null,["Medium:  painted aluminum <br> Visibility:  visible","Medium:  marble <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  limited visibility","Medium:  mural <br> Visibility:  visible","Medium:  copper and stainless steel <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  bronze <br> Visibility:  limited visibility","Medium:  stainless steel <br> Visibility:  visible","Medium:  steel <br> Visibility:  visible","Medium:  mural <br> Visibility:  Other","Medium:  bronze <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  limited visibility","Medium:  mural <br> Visibility:  limited visibility","Medium:  mural <br> Visibility:  visible","Medium:  aluminum <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  bronze <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  Other","Medium:  bronze <br> Visibility:  visible","Medium:  mosaic tile/concrete sculpture <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  bronze bust, stainless steel pedestal <br> Visibility:  visible","Medium:  mural <br> Visibility:  limited visibility","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  steel <br> Visibility:  visible","Medium:  sculpture <br> Visibility:  Other","Medium:  stone <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  steel <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  not visible","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural (non-city funded) <br> Visibility:  limited visibility","Medium:  bronze <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural (non-city funded) <br> Visibility:  visible","Medium:  mural (non-city funded) <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  bronze <br> Visibility:  visible","Medium:  stainless steel <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural (non-city funded) <br> Visibility:  limited visibility","Medium:  mural <br> Visibility:  limited visibility","Medium:  mural <br> Visibility:  visible","Medium:  bronze <br> Visibility:  limited visibility","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  limited visibility","Medium:  memorial <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural (non-city funded) <br> Visibility:  visible","Medium:  bronze <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  bronze <br> Visibility:  visible","Medium:  bronze <br> Visibility:  visible","Medium:  metalic sculpture <br> Visibility:  Other","Medium:  mural <br> Visibility:  visible","Medium:  painted aluminum <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  neon <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  concrete <br> Visibility:  Other","Medium:  mural <br> Visibility:  visible","Medium:  granite & steel <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  bronze <br> Visibility:  visible","Medium:  mural <br> Visibility:  limited visibility","Medium:  mural (non-city funded) <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  sculpture <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  bronze <br> Visibility:  visible","Medium:  bronze <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  limited visibility","Medium:  stainless steel <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  limited visibility","Medium:  painted steel <br> Visibility:  visible","Medium:  bronze <br> Visibility:  visible","Medium:  mural <br> Visibility:  limited visibility","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  bronze <br> Visibility:  visible","Medium:  mural <br> Visibility:  limited visibility","Medium:  mural (non-city funded) <br> Visibility:  limited visibility","Medium:  mural (non-city funded) <br> Visibility:  visible","Medium:  urns <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  bronze <br> Visibility:  visible","Medium:  bronze <br> Visibility:  limited visibility","Medium:  bronze <br> Visibility:  limited visibility","Medium:  bridge repainting <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  concrete, aluminum, steel <br> Visibility:  limited visibility","Medium:  painted steel <br> Visibility:  Other","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  bronze <br> Visibility:  limited visibility","Medium:  stainless steel / aluminum? <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  limited visibility","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  steel <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  bronze <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  fiberglass & clock <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  bronze <br> Visibility:  visible","Medium:  bronze <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  bronze <br> Visibility:  visible","Medium:  NA <br> Visibility:  not visible","Medium:  corten steel <br> Visibility:  visible","Medium:  sculpture <br> Visibility:  limited visibility","Medium:  aluminum and bronze <br> Visibility:  visible","Medium:  bronze <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  sculpture - neon, aluminum & resin <br> Visibility:  visible","Medium:  sculpture <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  Other","Medium:  mural <br> Visibility:  visible","Medium:  marble <br> Visibility:  limited visibility","Medium:  mural <br> Visibility:  visible","Medium:  sculpture <br> Visibility:  visible","Medium:  bronze <br> Visibility:  limited visibility","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  Other","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  limited visibility","Medium:  mural <br> Visibility:  visible","Medium:  bronze <br> Visibility:  visible","Medium:  mural (non-city funded) <br> Visibility:  limited visibility","Medium:  mural (non-city funded) <br> Visibility:  visible","Medium:  bus shelters <br> Visibility:  visible","Medium:  stainless steel <br> Visibility:  visible","Medium:  mural <br> Visibility:  limited visibility","Medium:  painted mural <br> Visibility:  limited visibility","Medium:  mural <br> Visibility:  visible","Medium:  bronze <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible"],null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addLegend","args":[{"colors":["red","blue","orange"],"labels":["Visible","Limited Visibility","Not Visible"],"na_color":null,"na_label":"NA","opacity":0.5,"position":"topleft","type":"unknown","title":"Visibility","extra":null,"layerId":null,"className":"info legend","group":null}]},{"method":"addControl","args":["<h2>INTERACTIVE MAP OF ARTWORKS BY VISIBILITY CATEGORY.<\/h2>","topright",null,"map-title"]}],"limits":{"lat":[39.25000418458825,39.42829000000012],"lng":[-76.77931999999998,-76.55570960997416]}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</section>
+<section id="to-overcome-the-overlapping-of-artworks-on-the-map-i-employed-the-clustering-options.-when-the-markers-on-the-map-close-within-a-distance-threshold-the-leaflet-groups-them-into-a-cluster.-the-cluster-is-marked-by-a-number-showing-the-count-of-markers-in-the-cluster.-as-you-keep-zooming-into-the-map-the-clusters-divide-to-show-smaller-clusters-and-further-show-individual-artworks-in-the-map." class="level1">
+<h1>To overcome the overlapping of artworks on the map, I employed the clustering options. When the markers on the map close within a distance threshold, the Leaflet groups them into a cluster. The cluster is marked by a number showing the count of markers in the cluster. As you keep zooming into the map, the clusters divide to show smaller clusters and further show individual artworks in the map.</h1>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(leaflet)</span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(sf)</span>
+<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-5"><a href="#cb31-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Specify the URL template for the tile provider</span></span>
+<span id="cb31-6"><a href="#cb31-6" aria-hidden="true" tabindex="-1"></a>tile_provider_url <span class="ot">&lt;-</span> <span class="st">"https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}"</span></span>
+<span id="cb31-7"><a href="#cb31-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-8"><a href="#cb31-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Create the interactive map with modified basemap and dimensions</span></span>
+<span id="cb31-9"><a href="#cb31-9" aria-hidden="true" tabindex="-1"></a><span class="fu">leaflet</span>(<span class="at">data =</span> art_sf, <span class="at">width =</span> <span class="dv">600</span>, <span class="at">height =</span> <span class="dv">600</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb31-10"><a href="#cb31-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addTiles</span>(<span class="at">urlTemplate =</span> tile_provider_url) <span class="sc">%&gt;%</span></span>
+<span id="cb31-11"><a href="#cb31-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addCircleMarkers</span>(</span>
+<span id="cb31-12"><a href="#cb31-12" aria-hidden="true" tabindex="-1"></a>    <span class="sc">~</span>longitude, <span class="sc">~</span>latitude,</span>
+<span id="cb31-13"><a href="#cb31-13" aria-hidden="true" tabindex="-1"></a>    <span class="at">color =</span> <span class="sc">~</span><span class="fu">case_when</span>(</span>
+<span id="cb31-14"><a href="#cb31-14" aria-hidden="true" tabindex="-1"></a>      visibility_category <span class="sc">==</span> <span class="st">"visible"</span> <span class="sc">~</span> <span class="st">"red"</span>,</span>
+<span id="cb31-15"><a href="#cb31-15" aria-hidden="true" tabindex="-1"></a>      visibility_category <span class="sc">==</span> <span class="st">"limited visibility"</span> <span class="sc">~</span> <span class="st">"blue"</span>,</span>
+<span id="cb31-16"><a href="#cb31-16" aria-hidden="true" tabindex="-1"></a>      visibility_category <span class="sc">==</span> <span class="st">"not visible"</span> <span class="sc">~</span> <span class="st">"orange"</span></span>
+<span id="cb31-17"><a href="#cb31-17" aria-hidden="true" tabindex="-1"></a>    ),</span>
+<span id="cb31-18"><a href="#cb31-18" aria-hidden="true" tabindex="-1"></a>    <span class="at">popup =</span> <span class="sc">~</span><span class="fu">paste</span>(<span class="st">"Medium: "</span>, medium, <span class="st">"&lt;br&gt;"</span>,</span>
+<span id="cb31-19"><a href="#cb31-19" aria-hidden="true" tabindex="-1"></a>                   <span class="st">"Visibility: "</span>, visibility_category),</span>
+<span id="cb31-20"><a href="#cb31-20" aria-hidden="true" tabindex="-1"></a>    <span class="at">radius =</span> <span class="fl">1.5</span>,</span>
+<span id="cb31-21"><a href="#cb31-21" aria-hidden="true" tabindex="-1"></a>    <span class="at">clusterOptions =</span> <span class="fu">markerClusterOptions</span>()</span>
+<span id="cb31-22"><a href="#cb31-22" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
+<span id="cb31-23"><a href="#cb31-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addLegend</span>(</span>
+<span id="cb31-24"><a href="#cb31-24" aria-hidden="true" tabindex="-1"></a>    <span class="at">position =</span> <span class="st">"bottomright"</span>,</span>
+<span id="cb31-25"><a href="#cb31-25" aria-hidden="true" tabindex="-1"></a>    <span class="at">colors =</span> <span class="fu">c</span>(<span class="st">"red"</span>, <span class="st">"blue"</span>, <span class="st">"orange"</span>),</span>
+<span id="cb31-26"><a href="#cb31-26" aria-hidden="true" tabindex="-1"></a>    <span class="at">labels =</span> <span class="fu">c</span>(<span class="st">"Visible"</span>, <span class="st">"Limited Visibility"</span>, <span class="st">"Not Visible"</span>),</span>
+<span id="cb31-27"><a href="#cb31-27" aria-hidden="true" tabindex="-1"></a>    <span class="at">title =</span> <span class="st">"Visibility"</span></span>
+<span id="cb31-28"><a href="#cb31-28" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
+<span id="cb31-29"><a href="#cb31-29" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addControl</span>(</span>
+<span id="cb31-30"><a href="#cb31-30" aria-hidden="true" tabindex="-1"></a>    <span class="at">html =</span> <span class="st">"&lt;h2&gt;INTERACTIVE MAP OF ARTWORKS BY VISIBILITY CATEGORY.&lt;/h2&gt;"</span>,</span>
+<span id="cb31-31"><a href="#cb31-31" aria-hidden="true" tabindex="-1"></a>    <span class="at">position =</span> <span class="st">"topright"</span>,</span>
+<span id="cb31-32"><a href="#cb31-32" aria-hidden="true" tabindex="-1"></a>    <span class="at">className =</span> <span class="st">"map-title"</span></span>
+<span id="cb31-33"><a href="#cb31-33" aria-hidden="true" tabindex="-1"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="htmlwidget-699cccd665ba7502f8b6" style="width:100%;height:650px;" class="leaflet html-widget "></div>
+<script type="application/json" data-for="htmlwidget-699cccd665ba7502f8b6">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false}]},{"method":"addCircleMarkers","args":[[39.28656162507934,39.29730928950913,39.30584308938751,39.30292029279229,39.30043783617391,39.29730000000006,39.28846556635039,39.28646269965611,39.29488000000003,39.2912,39.30646362158774,39.28519381287631,39.3059779876919,39.26682150653619,39.28738000812598,39.32947000000013,39.42829000000012,39.31189552664472,39.290372489646,39.29730928950913,39.292289762845,39.32947000000013,39.27836880139239,39.28022140477276,39.29488000000003,39.28664256406194,39.31099620461538,39.2838996318726,39.26694000000003,39.26694000000003,39.28289239119977,39.31189552664472,39.29146211325886,39.30750188439189,39.30711915495539,39.28653837861109,39.26694000000003,39.28659731736442,39.29146211325886,39.29146211325886,39.28365000000008,39.3077757819037,39.30744388259967,39.34837884521075,39.29780080038921,39.29868448603429,39.29765925892087,39.29730000000006,39.3507282518699,39.29146211325886,39.29488000000003,39.29730000000006,39.29488000000003,39.28583317423556,39.3015526379558,39.30328901482432,39.32947000000013,39.28646269965611,39.28489787932511,39.28673917194104,39.29730000000006,39.29146211325886,39.29146211325886,39.29488000000003,39.29730928950913,39.29146211325886,39.29146211325886,39.28291937086067,39.25000418458825,39.29730928950913,39.29730928950913,39.28022140477276,39.30672116781016,39.28763044116419,39.29146211325886,39.29146211325886,39.29730000000006,39.28703448054869,39.32422806536891,39.29488000000003,39.27469956751287,39.26694000000003,39.29146211325886,39.29730928950913,39.31099620461538,39.29461238292728,39.28657061829961,39.33167161806898,39.26694000000003,39.29730000000006,39.31194000000011,39.29730000000006,39.29310232572219,39.31619999999992,39.27833151021881,39.27977174375809,39.28646269965611,39.31619999999992,39.2790342996941,39.26388971672066,39.29488000000003,39.29488000000003,39.26694000000003,39.28920563184545,39.30189570183552,39.29730928950913,39.33384558374571,39.29636873180883,39.29488000000003,39.28780268947975,39.29146211325886,39.31096922495453,39.32831714689974,39.29730000000006,39.29005099455298,39.28925024349324,39.32947000000013,39.31180559444175,39.26694000000003,39.37076277976509,39.28643407772562,39.33472931296865,39.32831714689974,39.29146211325886,39.28619127986101,39.28925024349324,39.29146211325886,39.28365000000008,39.29096830302291,39.28365000000008,39.31619999999992,39.32804145953534,39.28096784205707,39.29488000000003,39.29280455582531,39.30508765888288,39.28365000000008,39.33108705874997,39.31602341475917,39.31194000000011,39.31451255374998,39.29730928950913,39.29730928950913,39.31359634135141,39.30541141481342,39.29730928950913,39.29488000000003,39.28941758078926,39.36557610689288,39.29503246155976,39.29730928950913,39.30241000000007,39.25000418458825,39.28664256406194,39.30424229617535,39.286183909827,39.29146211325886,39.29449364537777,39.32831714689974,39.29730000000006,39.30817233344339,39.31194000000011,39.28885597671823,39.29909817416774,39.32831714689974,39.3124081402014,39.31194000000011,39.27695686580637,39.29146211325886,39.35945167555406,39.28701276375379,39.29499691117859,39.29730000000006,39.32947000000013,39.26694000000003,39.29488000000003,39.29488000000003,39.28175924544286,39.32731889944722,39.28944844879339,39.28641773355463,39.29868448603429,39.29146211325886],[-76.61279148401297,-76.61563717252402,-76.63329602628102,-76.60957191114807,-76.59641450253403,-76.60749999999996,-76.63889382547316,-76.61616394162286,-76.62253999999996,-76.60457999999994,-76.6381793449001,-76.62012958508384,-76.63743290761579,-76.63164127374711,-76.63570620931955,-76.60331999999988,-76.77931999999998,-76.59960742306345,-76.63817146202119,-76.61563717252402,-76.64532280291871,-76.60331999999988,-76.6241858941242,-76.60655918234988,-76.62253999999996,-76.56680914865484,-76.58588376889628,-76.62888035511713,-76.62630000000001,-76.62630000000001,-76.63094879578455,-76.59960742306345,-76.61031346272442,-76.62114988191786,-76.6163791665234,-76.61535868592661,-76.62630000000001,-76.60928176413138,-76.61031346272442,-76.61031346272442,-76.65196999999989,-76.64138216577091,-76.63382662627828,-76.56843165621679,-76.61533898833461,-76.62299878904554,-76.58422002314211,-76.60749999999996,-76.69460280901836,-76.61031346272442,-76.62253999999996,-76.60749999999996,-76.62253999999996,-76.63264851441988,-76.6430238325883,-76.59300639936833,-76.60331999999988,-76.61616394162286,-76.65235266008187,-76.65211940500427,-76.60749999999996,-76.61031346272442,-76.61031346272442,-76.62253999999996,-76.61563717252402,-76.61031346272442,-76.61031346272442,-76.62996853477262,-76.62289087040199,-76.61563717252402,-76.61563717252402,-76.60655918234988,-76.64185570336787,-76.61629234521642,-76.61031346272442,-76.61031346272442,-76.60749999999996,-76.55570960997416,-76.5700688634434,-76.62253999999996,-76.63308018899397,-76.62630000000001,-76.61031346272442,-76.61563717252402,-76.58588376889628,-76.57774620187782,-76.63743290761579,-76.58903139599886,-76.62630000000001,-76.60749999999996,-76.64039000000002,-76.60749999999996,-76.64015259533683,-76.57662999999991,-76.61192395611208,-76.62786412122404,-76.61616394162286,-76.57662999999991,-76.63601197880951,-76.65110260246115,-76.62253999999996,-76.62253999999996,-76.62630000000001,-76.59420249766731,-76.58539753018476,-76.61563717252402,-76.6641132885438,-76.61549394671098,-76.62253999999996,-76.61239578232005,-76.61031346272442,-76.67455692098531,-76.6077462874286,-76.60749999999996,-76.61519267383119,-76.61627047323799,-76.60331999999988,-76.60210753830489,-76.62630000000001,-76.74324870143664,-76.61514965903694,-76.66280278206233,-76.6077462874286,-76.61031346272442,-76.62208503141323,-76.61627047323799,-76.61031346272442,-76.65196999999989,-76.65301815838353,-76.65196999999989,-76.57662999999991,-76.68457044687997,-76.63281938560544,-76.62253999999996,-76.65038238493479,-76.58733167736347,-76.65196999999989,-76.6326575076402,-76.59610006714917,-76.64039000000002,-76.60966184335098,-76.61563717252402,-76.61563717252402,-76.60923370933864,-76.59271861631896,-76.61563717252402,-76.62253999999996,-76.61645033676308,-76.62819068922511,-76.61572227669929,-76.61563717252402,-76.56324999999987,-76.62289087040199,-76.56680914865484,-76.62025585685615,-76.5936179383483,-76.61031346272442,-76.64727149061633,-76.6077462874286,-76.60749999999996,-76.61359188061903,-76.64039000000002,-76.61515422748131,-76.64155180250998,-76.6077462874286,-76.61164035181548,-76.64039000000002,-76.61306128062176,-76.61031346272442,-76.60992264673951,-76.65103901021284,-76.61987063772014,-76.60749999999996,-76.60331999999988,-76.62630000000001,-76.62253999999996,-76.62253999999996,-76.68254290060548,-76.5857578638122,-76.58881555871181,-76.61753990432766,-76.62299878904554,-76.61031346272442],1.5,null,null,{"interactive":true,"className":"","stroke":true,"color":["red","red","red","blue","red","red","red","blue","red","red",null,"red","red","blue","blue","red","red","red","red","red","red",null,"red","red","red","red","blue","red","red","red","red","red","red","red",null,"red","red","red","red","red","orange","red","red","blue","red","red","red","red","red","red","red","red","red","red","blue","blue","red","blue","red","blue","red","red","red","red","red","red","red","red","red","red","red",null,"red","red","red","red","red","red","red",null,"red","red","red","red","blue","red","red","red","red","red","red","red","red","red","red","blue","red","red","red","blue","red","red","blue","red","red","red","blue","blue","red","red","red","red","red","red","blue","blue","red","red","red","blue",null,"red","red","red","blue","red","red","red","blue","red","red","red","red","red","red","red","red","red","red","red","red","red","red","red","red","red","orange","red","blue","red","red","red","red","red","red","red","red",null,"red","blue","red","red","blue","red","red",null,"red","red","red","red","blue","red","red","blue","red","red","red","blue","blue","red","red","red","red"],"weight":5,"opacity":0.5,"fill":true,"fillColor":["red","red","red","blue","red","red","red","blue","red","red",null,"red","red","blue","blue","red","red","red","red","red","red",null,"red","red","red","red","blue","red","red","red","red","red","red","red",null,"red","red","red","red","red","orange","red","red","blue","red","red","red","red","red","red","red","red","red","red","blue","blue","red","blue","red","blue","red","red","red","red","red","red","red","red","red","red","red",null,"red","red","red","red","red","red","red",null,"red","red","red","red","blue","red","red","red","red","red","red","red","red","red","red","blue","red","red","red","blue","red","red","blue","red","red","red","blue","blue","red","red","red","red","red","red","blue","blue","red","red","red","blue",null,"red","red","red","blue","red","red","red","blue","red","red","red","red","red","red","red","red","red","red","red","red","red","red","red","red","red","orange","red","blue","red","red","red","red","red","red","red","red",null,"red","blue","red","red","blue","red","red",null,"red","red","red","red","blue","red","red","blue","red","red","red","blue","blue","red","red","red","red"],"fillOpacity":0.2},{"showCoverageOnHover":true,"zoomToBoundsOnClick":true,"spiderfyOnMaxZoom":true,"removeOutsideVisibleBounds":true,"spiderLegPolylineOptions":{"weight":1.5,"color":"#222","opacity":0.5},"freezeAtZoom":false},null,["Medium:  painted aluminum <br> Visibility:  visible","Medium:  marble <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  limited visibility","Medium:  mural <br> Visibility:  visible","Medium:  copper and stainless steel <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  bronze <br> Visibility:  limited visibility","Medium:  stainless steel <br> Visibility:  visible","Medium:  steel <br> Visibility:  visible","Medium:  mural <br> Visibility:  Other","Medium:  bronze <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  limited visibility","Medium:  mural <br> Visibility:  limited visibility","Medium:  mural <br> Visibility:  visible","Medium:  aluminum <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  bronze <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  Other","Medium:  bronze <br> Visibility:  visible","Medium:  mosaic tile/concrete sculpture <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  bronze bust, stainless steel pedestal <br> Visibility:  visible","Medium:  mural <br> Visibility:  limited visibility","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  steel <br> Visibility:  visible","Medium:  sculpture <br> Visibility:  Other","Medium:  stone <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  steel <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  not visible","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural (non-city funded) <br> Visibility:  limited visibility","Medium:  bronze <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural (non-city funded) <br> Visibility:  visible","Medium:  mural (non-city funded) <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  bronze <br> Visibility:  visible","Medium:  stainless steel <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural (non-city funded) <br> Visibility:  limited visibility","Medium:  mural <br> Visibility:  limited visibility","Medium:  mural <br> Visibility:  visible","Medium:  bronze <br> Visibility:  limited visibility","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  limited visibility","Medium:  memorial <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural (non-city funded) <br> Visibility:  visible","Medium:  bronze <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  bronze <br> Visibility:  visible","Medium:  bronze <br> Visibility:  visible","Medium:  metalic sculpture <br> Visibility:  Other","Medium:  mural <br> Visibility:  visible","Medium:  painted aluminum <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  neon <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  concrete <br> Visibility:  Other","Medium:  mural <br> Visibility:  visible","Medium:  granite & steel <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  bronze <br> Visibility:  visible","Medium:  mural <br> Visibility:  limited visibility","Medium:  mural (non-city funded) <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  sculpture <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  bronze <br> Visibility:  visible","Medium:  bronze <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  limited visibility","Medium:  stainless steel <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  limited visibility","Medium:  painted steel <br> Visibility:  visible","Medium:  bronze <br> Visibility:  visible","Medium:  mural <br> Visibility:  limited visibility","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  bronze <br> Visibility:  visible","Medium:  mural <br> Visibility:  limited visibility","Medium:  mural (non-city funded) <br> Visibility:  limited visibility","Medium:  mural (non-city funded) <br> Visibility:  visible","Medium:  urns <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  bronze <br> Visibility:  visible","Medium:  bronze <br> Visibility:  limited visibility","Medium:  bronze <br> Visibility:  limited visibility","Medium:  bridge repainting <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  concrete, aluminum, steel <br> Visibility:  limited visibility","Medium:  painted steel <br> Visibility:  Other","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  bronze <br> Visibility:  limited visibility","Medium:  stainless steel / aluminum? <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  limited visibility","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  steel <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  bronze <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  fiberglass & clock <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  bronze <br> Visibility:  visible","Medium:  bronze <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  bronze <br> Visibility:  visible","Medium:  NA <br> Visibility:  not visible","Medium:  corten steel <br> Visibility:  visible","Medium:  sculpture <br> Visibility:  limited visibility","Medium:  aluminum and bronze <br> Visibility:  visible","Medium:  bronze <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  sculpture - neon, aluminum & resin <br> Visibility:  visible","Medium:  sculpture <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  Other","Medium:  mural <br> Visibility:  visible","Medium:  marble <br> Visibility:  limited visibility","Medium:  mural <br> Visibility:  visible","Medium:  sculpture <br> Visibility:  visible","Medium:  bronze <br> Visibility:  limited visibility","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  Other","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  limited visibility","Medium:  mural <br> Visibility:  visible","Medium:  bronze <br> Visibility:  visible","Medium:  mural (non-city funded) <br> Visibility:  limited visibility","Medium:  mural (non-city funded) <br> Visibility:  visible","Medium:  bus shelters <br> Visibility:  visible","Medium:  stainless steel <br> Visibility:  visible","Medium:  mural <br> Visibility:  limited visibility","Medium:  painted mural <br> Visibility:  limited visibility","Medium:  mural <br> Visibility:  visible","Medium:  bronze <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible","Medium:  mural <br> Visibility:  visible"],null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]},{"method":"addLegend","args":[{"colors":["red","blue","orange"],"labels":["Visible","Limited Visibility","Not Visible"],"na_color":null,"na_label":"NA","opacity":0.5,"position":"bottomright","type":"unknown","title":"Visibility","extra":null,"layerId":null,"className":"info legend","group":null}]},{"method":"addControl","args":["<h2>INTERACTIVE MAP OF ARTWORKS BY VISIBILITY CATEGORY.<\/h2>","topright",null,"map-title"]}],"limits":{"lat":[39.25000418458825,39.42829000000012],"lng":[-76.77931999999998,-76.55570960997416]}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
